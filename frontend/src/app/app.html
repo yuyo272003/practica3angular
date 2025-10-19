@@ -1,0 +1,13 @@
+<header class="navbar">
+  <h1>Práctica 3. Frameworks para el desarrollo web</h1>
+  <nav>
+    <a routerLink="/productos" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      Productos
+    </a>
+    <a routerLink="/nuevo" routerLinkActive="active">Nuevo producto</a>
+  </nav>
+</header>
+
+<main class="container">
+  <router-outlet></router-outlet>
+</main>

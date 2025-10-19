@@ -1,0 +1,21 @@
+<h2>Editar producto</h2>
+
+<form (ngSubmit)="actualizarProducto()">
+  <div>
+    <label>Nombre:</label>
+    <input type="text" [(ngModel)]="producto.nombre" name="nombre" required />
+  </div>
+
+  <div>
+    <label>Precio:</label>
+    <input type="number" [(ngModel)]="producto.precio" name="precio" required />
+  </div>
+
+  <div>
+    <label>Stock:</label>
+    <input type="number" [(ngModel)]="producto.stock" name="stock" required />
+  </div>
+
+  <button type="submit">Guardar cambios</button>
+  <a routerLink="/productos">Cancelar</a>
+</form>

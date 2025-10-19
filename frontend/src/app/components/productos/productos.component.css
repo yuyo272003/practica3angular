@@ -1,0 +1,67 @@
+/* ====== ESTILOS GENERALES ====== */
+h2 {
+  margin-bottom: 1rem;
+  color: #2f4f4f;
+}
+
+/* ====== TABLA ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #3a6ba5;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:hover {
+  background-color: #f4f6fb;
+  transition: background-color 0.2s ease-in;
+}
+
+/* ====== BOTONES ====== */
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Botón editar */
+button[color="edit"], .btn-edit {
+  background-color: #007bff;
+}
+
+/* Botón eliminar */
+button[color="delete"], .btn-delete {
+  background-color: #dc3545;
+}
+
+/* ====== MENSAJE VACÍO ====== */
+div[ngIf] {
+  color: gray;
+  font-style: italic;
+  text-align: center;
+  margin-top: 1rem;
+}

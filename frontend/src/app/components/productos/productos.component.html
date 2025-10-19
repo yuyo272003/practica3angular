@@ -1,0 +1,29 @@
+<h2>Listado de Productos</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Stock</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of productos">
+        <td>{{ p.id }}</td>
+        <td>{{ p.nombre }}</td>
+        <td>MX${{ p.precio | number: '1.2-2' }}</td>
+        <td>{{ p.stock }}</td>
+        <td>
+            <button class="btn-edit" (click)="editarProducto(p)">✏️ Editar</button>
+            <button class="btn-delete" (click)="eliminarProducto(p.id)">🗑️ Eliminar</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div *ngIf="productos.length === 0">
+    No hay productos registrados.
+</div>
